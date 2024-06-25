@@ -1,0 +1,71 @@
+:root {
+  --dark-blue-100: #609ed4;
+  --dark-blue-200: #356ea9;
+  --dark-blue-300: #0a3871;
+  --dark-blue-400: #072b61;
+  --dark-blue-500: #052051;
+
+  --light-blue-100: #f3f5fc;
+  --light-blue-200: #eff1fa;
+  --light-blue-300: #e9ecf8;
+  --light-blue-400: #aab2d5;
+  --light-blue-500: #757fb2;
+
+  --gray-100: #ced4da;
+  --gray-200: #adb5bd;
+  --gray-300: #868e96;
+  --gray-400: #495057;
+  --gray-500: #343a40;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+body {
+  position: relative;
+  font-family: "Inter", sans-serif;
+  background-color: var(--light-blue-100);
+  color: var(--gray-500);
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100dvh;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 48px 0 0 0;
+  width: auto;
+}
+main {
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  gap: 80px;
+  justify-content: end;
+}
+
+aside {
+  height: 100%;
+  border-radius: 38px;
+  width: 300px;
+  background: white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+aside image {
+  width: 300px;
+  aspect-ratio: 21 / 19;
+}
+section {
+  padding: 60px 0 0 0;
+}
+textarea {
+  resize: none;
+}
