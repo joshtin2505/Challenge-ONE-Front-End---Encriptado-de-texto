@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="shortcut icon" href="/public/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header>
-        <figure>
+    <div class="container">
+        <header>
             <a href="/">
                 <img src="/public/Logo.svg" alt="Logo">
             </a>
-        </figure>
-    </header>
-    <main>
-        <section>
-            <form action="">
-                <label for="text">Texto a encriptar</label>
-                <textarea name="text" id="texto"></textarea>
-                <button id="cript">Encriptar</button>
-                <button id="decript">Desencriptar</button>
-            </form>
-        </section>
-        <aside>
-            <img src="/assets/Muñeco.svg" alt="" srcset="">
-        </aside>
-    </main>
-
-    
+        </header>
+        <main>
+            <section>
+                <textarea placeholder="Ingrese el texto aqui" id="texto"></textarea>
+                <p class="info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Solo letras minúsculas y sin acentos
+                </p>
+                <div class="parent-btn">
+                    <button onclick="encriptar()" id="cript" class="primary-btn">Encriptar</button>
+                    <button onclick="desencriptar()" id="decript" class="secondary-btn">Desencriptar</button>
+                </div>
+            </section>
+            <aside>
+                <div class="" id="no-text">
+                    <img src="/assets/Muñeco.svg" alt="" class="not-found-image">
+                    <div class="not-found-text">
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                </div>
+                <div id="cripted-text-container" hidden>
+                    <p id="cripted-text"></p>
+                    <button id="copy-cript" class="secondary-btn">Desencriptar</button>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <script src="/scripts/index.js"></script>
 </body>
+
 </html>
